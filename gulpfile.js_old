@@ -1,0 +1,266 @@
+'use strict';
+
+var gulp        = require('gulp');
+var gutil       = require('gulp-util');
+
+var sass        = require('gulp-sass');
+var cssmin      = require('gulp-minify-css');
+var concat      = require('gulp-concat');
+var uglify      = require('gulp-uglify');
+var miniHtml    = require('gulp-minify-html');
+var livereload  = require('gulp-livereload');
+var sm          = require('gulp-sourcemaps');
+var streamqueue = require('streamqueue');
+var debug       = require('gulp-debug');
+var rename      = require('gulp-rename');
+var browserify  = require('browserify');
+var watchify    = require('watchify');
+var es6ify      = require('es6ify');
+var reactify    = require('reactify');
+var source      = require('vinyl-source-stream');
+
+var livereload  = require('gulp-livereload');
+var lrPort      = 35731;
+var connect     = require('connect');
+var child_process = require('child_process');
+
+var assets      = require('./client/assets.json');
+
+
+/** File paths */
+var dist = 'client/assets';
+
+var jsxFiles = 'client/app/**/*.jsx';
+
+var requireFiles = [
+    assets.vendors.js.src,
+    assets.vendors.js.min
+];
+
+function compileScripts(watch) {
+    gutil.log('Starting browserify');
+
+    var entryFile = './client/app/app.jsx';
+    es6ify.traceurOverrides = {experimental: true};
+
+    var bundler;
+    if (watch) {
+        bundler = watchify(entryFile);
+    } else {
+        bundler = browserify(entryFile);
+    }
+
+    bundler.require(requireFiles);
+    bundler.transform(reactify);
+    bundler.transform(es6ify.configure(/.jsx/));
+
+    var rebundle = function () {
+        var stream = bundler.bundle({ debug: true});
+
+        stream.on('error', function (err) { console.error(err) });
+        stream = stream.pipe(source(entryFile));
+        stream.pipe(rename('app.js'));
+
+        stream.pipe(gulp.dest(dist + '/js'));
+    }
+
+    bundler.on('update', rebundle);
+    return rebundle();
+}
+
+function initWatch(files, task) {
+    if (typeof task === "string") {
+        gulp.start(task);
+        gulp.watch(files, [task]);
+    } else {
+        task.map(function (t) { gulp.start(t) });
+        gulp.watch(files, task);
+    }
+}
+
+function error(err) {
+    console.log(err.message.trim());
+}
+
+
+function Server(config) {
+    this.service = null;
+    this.config = config;
+
+    this.start = function(fn) {
+        var self = this;
+        if (this.service) {
+            this.service.kill('SIGKILL');
+            this.service = null;
+        }
+
+        this.service = child_process.spawn('node', [this.config.app], process.env);
+
+        this.service.stdout.setEncoding('utf8');
+        this.service.stderr.setEncoding('utf8');
+        this.service.stdout.on('data', function(data) {
+            console.log(data.trim());
+            if (fn)
+                fn(data.trim());
+        });
+        this.service.stderr.on('data', function(data) {
+            console.log(data.trim());
+        });
+        process.on('exit', function() {
+            self.service.kill();
+        });
+    };
+}
+
+function requireUncached(module) {
+    delete require.cache[require.resolve(module)];
+    return require(module);
+}
+
+
+var node_server = new Server({
+    app: 'server/server.js'
+});
+/*
+var www_server = new Server({
+    app: 'gulp-server.js'
+});
+*/
+gulp.task('start-server', function(cb) {
+    node_server.start(function(data) {
+        if (/^mongodb connection:.*/.test(data)) {
+            cb();
+        }
+    });
+});
+
+//gulp.task('start-www', function(cb) {
+//    www_server.start(function(data) {
+//        if (/^gulp-server.*/.test(data)) {
+//            cb();
+//        }
+//    });
+//});
+
+// vendors
+gulp.task('vendors-js', function() {
+    return streamqueue({
+                objectMode: true
+            },
+            gulp.src(assets.vendors.js.min),
+            gulp.src(assets.vendors.js.src)
+            .pipe(debug({
+                title: 'vendors-js:'
+            }))
+            .pipe(uglify())
+        )
+        .pipe(concat('vendors.min.js'))
+        .pipe(gulp.dest('client/assets/js/'));
+});
+
+
+gulp.task('vendors-css', function() {
+    return gulp.src(assets.vendors.css.src)
+        .pipe(debug({
+            title: 'vendors-css:'
+        }))
+        .pipe(cssmin())
+        .pipe(concat('vendors.min.css'))
+        .pipe(gulp.dest('client/assets/css/'));
+});
+
+//app
+gulp.task('app-js', function() {
+    // return browserify('client/app/client.js')
+    //     .transform(reactify)
+    //     .bundle()
+    //     .pipe(source('app.src.js'))
+    //     .pipe(gulp.dest('client/assets/js/'));
+    return gulp.src('client/app/**/*.js')
+        .pipe(debug({
+            title: 'app-js:'
+        }))
+        // .pipe(sm.init())
+        // .pipe(browserify())
+        .pipe(react({
+            es6module: true
+        }))
+        .pipe(transpile({
+            basePath: __dirname + '/client/vendors/react/'
+        }))
+        .pipe(concat('app.src.js'))
+        // .pipe(sm.write('./'))
+        .pipe(gulp.dest('client/assets/js/'));
+});
+
+gulp.task('vendors-require', function() {
+    return gulp.src(assets.vendors.js.require)
+        .pipe(debug({
+            title: 'vendors-require:'
+        }))
+        .pipe(browserify({
+            insertGlobals: true,
+            debug: !gulp.env.production
+        }))
+        .pipe(concat('vendors-es6.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('client/assets/js'));
+})
+
+gulp.task('app-sass', function() {
+    return gulp.src(["client/app/**/*.scss"])
+        .pipe(debug({
+            title: 'app-sass:'
+        }))
+        .pipe(sass())
+        .on('error', error)
+        .pipe(concat('app.src.css'))
+        .pipe(gulp.dest('./client/assets/css/'));
+});
+
+gulp.task('dev', [
+    'vendors-js',
+    // 'vendors-require',
+    'vendors-css',
+    'app-js',
+    'app-sass'
+]);
+
+gulp.task('default', ['dev'], function() {
+    var lrServer = livereload(lrPort);
+    var reloadPage = function (evt) {
+        lrServer.changed(evt.path);
+    };
+
+    function initWatch(files, task) {
+        gulp.start(task);
+        gulp.watch(files, [task]);
+    }
+
+    compileScripts(true);
+
+    gulp.watch([dist + '/**/*'], reloadPage);
+
+    gulp.start('start-server');
+
+    gulp.watch([
+        'server/**/*.js',
+        'server/**/*.json',
+        'common/**/*.*'
+    ], ['start-server']);
+
+    gulp.watch('./client/app/**/*.scss', ['app-sass']);
+
+    gulp.watch('./client/assets.json', ['vendors-js', 'vendors-css', 'app-js'])
+        .on('change', function() {
+            assets = requireUncached('./client/assets.json');
+            compileScripts(true);
+            console.log('reload assets.json');
+        });
+
+    // gulp.watch([
+    //     'client/app/**/*.html',
+    //     'client/assets/**/*.css',
+    //     'client/assets/js/*.js'
+    // ], livereload.changed);
+});

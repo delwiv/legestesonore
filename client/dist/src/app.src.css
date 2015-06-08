@@ -1,0 +1,83 @@
+body {
+  margin-top: 120px; }
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  border: 1px solid black; }
+  .sidebar.sidebar-cv {
+    border: none;
+    position: fixed;
+    width: 25% !important;
+    z-index: 1000; }
+    .sidebar.sidebar-cv img {
+      height: 780px;
+      width: auto;
+      overflow-x: hidden; }
+  .sidebar.sidebar-home {
+    border: 1px solid black;
+    position: relative;
+    z-index: 0; }
+    .sidebar.sidebar-home p {
+      font-size: 85%; }
+  .sidebar.sidebar-corps-danse {
+    display: none; }
+
+.my-topbar {
+  background-color: rgba(255, 255, 255, 0.6) !important; }
+  .my-topbar * {
+    background-color: rgba(255, 255, 255, 0) !important; }
+  .my-topbar .top-bar {
+    height: 100px !important; }
+    .my-topbar .top-bar ul li a {
+      height: 50px !important;
+      color: black !important;
+      line-height: 1.5 !important; }
+    .my-topbar .top-bar .presentation {
+      height: 90px !important;
+      margin-top: 5px;
+      border-right: 1px solid black; }
+    .my-topbar .top-bar .topbar-content {
+      overflow-y: hidden;
+      padding-top: 30px;
+      font-size: xx-large; }
+
+.footer {
+  background-color: white; }
+
+.pageContent.home {
+  position: fixed;
+  height: 100%; }
+
+.pageContent .cv {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: justify;
+  text-justify: inter-word; }
+
+.pageContent .home {
+  border: 1px solid black;
+  margin: 0px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+
+.pageContent .corpsDanse section {
+  padding: 100px; }
+  .pageContent .corpsDanse section p {
+    font-size: 200%; }
+
+img.img-holder-img {
+  top: 130px;
+  width: 100% !important;
+  position: absolute;
+  height: auto !important; }
+
+.imgHolder {
+  top: 130px !important;
+  left: 0px !important; }
