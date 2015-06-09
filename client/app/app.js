@@ -112,7 +112,7 @@ var Page = React.createClass({
 var Sidebar = React.createClass({
     render: function() {
         var page = this.props.page;
-        var classname = 'sidebar large-3 small-3 columns sidebar-' + page;
+        var classname = 'sidebar large-3 small-3 text-center columns sidebar-' + page;
         var sidebarContent = assets.sidebar[page];
         // console.log('sidebar:' + page);
         // console.log(sidebarContent);
