@@ -48,6 +48,7 @@ body {
       font-size: xx-large; }
 
 .footer {
+  margin-top: 50px;
   background-color: white; }
 
 .pageContent.home {
@@ -68,16 +69,10 @@ body {
   padding-bottom: 56.25%; }
 
 .pageContent .corpsDanse section {
-  padding: 100px; }
+  margin-top: 200px;
+  margin-bottom: 200px; }
   .pageContent .corpsDanse section p {
-    font-size: 200%; }
+    font-size: 150%; }
 
-img.img-holder-img {
-  top: 130px;
-  width: 100% !important;
-  position: absolute;
-  height: auto !important; }
-
-.imgHolder {
-  top: 130px !important;
-  left: 0px !important; }
+.hidden * {
+  visibility: hidden !important; }

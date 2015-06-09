@@ -17,16 +17,25 @@ var Locations    = Router.Locations;
 
 var CorpsDanse = React.createClass({
     componentDidMount: function() {
-        $('.img-holder').show();
-        $('.img-holder').imageScroll();
+        $('.imageHolder').removeClass('hidden');
+        $('.img-holder-img').removeClass('hidden');
+        if(!$('.img-holder-img').length){
+            $('.img-holder').imageScroll({
+                coverRatio: 0.8
+            });
+        }
     },
-    componentDidUnmount: function() {
-        $('img-holder').hide();
+    componentWillUnmount: function() {
+        $('.imageHolder').addClass('hidden');
+        $('.img-holder-img').addClass('hidden');
+
     },
     render: function() {
 
         return (
             <div className="corpsDanse">
+
+                <section><h1>INTRODUCTION</h1></section>
 
                 <div className="img-holder" data-image="/assets/img/cd_slide-1.png">
                 </div>
