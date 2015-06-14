@@ -26,58 +26,12 @@ var CorpsDanse = React.createClass({
             clear: "both"
         };
 
-        // Cache selectors
-        var lastId,
-            topMenu = $("#corpsDanse"),
-            topMenuHeight = topMenu.outerHeight()+15,
-            // All list items
-            menuItems = topMenu.find("a"),
-            // Anchors corresponding to menu items
-            scrollItems = menuItems.map(function(){
-              var item = $($(this).attr("href"));
-              if (item.length) { return item; }
-            });
-
-        // Bind click handler to menu items
-        // so we can get a fancy scroll animation
-        menuItems.click(function(e){
-          var href = $(this).attr("href"),
-              offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-          $('html, body').stop().animate({
-              scrollTop: offsetTop
-          }, 300);
-          e.preventDefault();
-        });
-
-        // Bind to scroll
-        $(window).scroll(function(){
-           // Get container scroll position
-           var fromTop = $(this).scrollTop()+topMenuHeight;
-
-           // Get id of current scroll item
-           var cur = scrollItems.map(function(){
-             if ($(this).offset().top < fromTop)
-               return this;
-           });
-           // Get the id of the current element
-           cur = cur[cur.length-1];
-           var id = cur && cur.length ? cur[0].id : "";
-
-           if (lastId !== id) {
-               lastId = id;
-               // Set/remove active class
-               menuItems
-                 .parent().removeClass("active")
-                 .end().filter("[href=#"+id+"]").parent().addClass("active");
-           }
-        });
-
         return (
             <div className="corpsDanse large-12 small-12 columns" id="corpsDanse">
                 <section>
                     <h1 id="introduction">Introduction</h1>
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-1.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-1.jpg"></div>
                 <section>
                     <ul>
                         <li className="large-6 small-6 columns">
@@ -97,11 +51,11 @@ var CorpsDanse = React.createClass({
                     <div style={style}></div>
                 </section>
 
-                <div className="img-holder" data-image="/assets/img/cd_slide-2.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-2.jpg"></div>
                 <section>
                     <h1>Anatomie sonore</h1>
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-3.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-3.jpg"></div>
                 <section>
                     <div className="large-6 small-6 columns">
                         <p>
@@ -119,12 +73,12 @@ var CorpsDanse = React.createClass({
                     </div>
                     <div style={style}></div>
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-4.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-4.jpg"></div>
                 <section>
                     <h1>Geste musical</h1>
                 </section>
 
-                <div className="img-holder" data-image="/assets/img/cd_slide-5.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-5.jpg"></div>
                 <section>
                     <div className="large-6 small-6 columns">
                         <p>
@@ -158,11 +112,11 @@ var CorpsDanse = React.createClass({
                     </div>
                     <div style={style}></div>
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-6.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-6.jpg"></div>
                 <section>
                     <h1>Chorégraphie</h1>
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-7.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-7.jpg"></div>
                 <section>
 
 
@@ -206,12 +160,12 @@ var CorpsDanse = React.createClass({
                     <div style={style}></div>
 
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-8.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-8.jpg"></div>
                 <section>
                     <h1>Temps</h1>
 
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-9.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-9.jpg"></div>
                 <section>
 
                 <div className="large-6 small-6 columns">
@@ -240,12 +194,12 @@ var CorpsDanse = React.createClass({
                     <div style={style}></div>
 
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-10.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-10.jpg"></div>
                 <section>
                     <h1>Espace</h1>
 
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd_slide-5.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-5.jpg"></div>
                 <section>
 
                     <div className="large-6 small-6 columns">
