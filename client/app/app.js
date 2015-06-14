@@ -94,6 +94,9 @@ var PageContent = React.createClass({
             case 'corps-danse':
                 element = <CorpsDanse/>;
                 break;
+            case 'vetement-sonore':
+                element = <VetementSonore/>;
+                break;
             default:
                 element = <Home/>;
                 break;

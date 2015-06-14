@@ -44,7 +44,7 @@ body {
         }
     }
     &.sidebar-corps-danse {
-        display:none;
+        display: none;
         position: fixed;
         text-align: right;
         a {
@@ -151,17 +151,37 @@ body {
                 text-justify: inter-word;
             }
             h1 {
-                padding: 250px;
+                padding-bottom: 250px;
+                padding-top: 250px;
                 font-size: 400%;
                 text-align: center;
             }
             img {
                 margin-top: 15px;
                 margin-bottom: 50px;
-                text-align: center;
             }
         }
         // .img-holder {}
+    }
+    .vetementSonore {
+        .names {
+            text-align: center;
+        }
+        .vert-photos {
+            // position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+            text-align: center;
+            .long-vert-img {
+                // position: absolute;
+                // bottom: 0;
+                display: inline-block;
+                text-align: center;
+                vertical-align: baseline;
+                height: 777px;
+                object-fit: cover;
+            }
+        }
     }
 }
 

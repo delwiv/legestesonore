@@ -28,6 +28,8 @@ var CorpsDanse = React.createClass({
 
         return (
             <div className="corpsDanse large-12 small-12 columns" id="corpsDanse">
+                <div className="img-holder" data-image="/assets/img/cd-slide-12.jpg"></div>
+
                 <section>
                     <h1 id="introduction">Introduction</h1>
                 </section>
@@ -199,7 +201,7 @@ var CorpsDanse = React.createClass({
                     <h1>Espace</h1>
 
                 </section>
-                <div className="img-holder" data-image="/assets/img/cd-slide-5.jpg"></div>
+                <div className="img-holder" data-image="/assets/img/cd-slide-11.jpg"></div>
                 <section>
 
                     <div className="large-6 small-6 columns">

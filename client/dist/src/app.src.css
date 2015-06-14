@@ -101,14 +101,28 @@ body {
     text-justify: inter-word; }
   .pageContent .corpsDanse section h1,
   .pageContent .vetementSonore section h1 {
-    padding: 250px;
+    padding-bottom: 250px;
+    padding-top: 250px;
     font-size: 400%;
     text-align: center; }
   .pageContent .corpsDanse section img,
   .pageContent .vetementSonore section img {
     margin-top: 15px;
-    margin-bottom: 50px;
-    text-align: center; }
+    margin-bottom: 50px; }
+
+.pageContent .vetementSonore .names {
+  text-align: center; }
+
+.pageContent .vetementSonore .vert-photos {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center; }
+  .pageContent .vetementSonore .vert-photos .long-vert-img {
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    height: 777px;
+    object-fit: cover; }
 
 .hidden * {
   visibility: hidden !important; }
