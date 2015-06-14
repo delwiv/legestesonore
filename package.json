@@ -23,6 +23,7 @@
     "gulp-util": "^3.0.5",
     "inflection": "^1.7.1",
     "jquery": "^2.1.4",
+    "jquery-scrollto": "^1.4.4",
     "lodash": "^3.7.0",
     "loopback": "^2.14.0",
     "loopback-boot": "^2.6.5",

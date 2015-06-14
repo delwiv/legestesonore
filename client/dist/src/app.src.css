@@ -6,15 +6,15 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 10px;
-  padding-right: 10px;
-  text-align: justify;
-  text-justify: inter-word;
-  border: 1px solid black; }
+  padding-right: 10px; }
   .sidebar.sidebar-cv {
     border: none;
     position: fixed;
     width: 25% !important;
-    z-index: 1000; }
+    z-index: 1000;
+    text-align: justify;
+    text-justify: inter-word;
+    border: 1px solid black; }
     .sidebar.sidebar-cv img {
       height: 780px;
       width: auto;
@@ -26,7 +26,23 @@ body {
     .sidebar.sidebar-home p {
       font-size: 85%; }
   .sidebar.sidebar-corps-danse {
-    display: none; }
+    display: none;
+    position: fixed;
+    text-align: right; }
+    .sidebar.sidebar-corps-danse a {
+      color: #aaa;
+      border-top: 3px solid white; }
+      .sidebar.sidebar-corps-danse a:hover {
+        color: #000; }
+    .sidebar.sidebar-corps-danse li.active a {
+      border-top: 3px solid #333;
+      color: #333; }
+    .sidebar.sidebar-corps-danse ul {
+      list-style: none; }
+    .sidebar.sidebar-corps-danse ul li a {
+      height: 50px !important;
+      color: black !important;
+      line-height: 1.5 !important; }
 
 .my-topbar {
   padding-right: 20px;
@@ -72,14 +88,27 @@ body {
   height: 0;
   padding-bottom: 56.25%; }
 
-.pageContent .corpsDanse section {
+.pageContent .corpsDanse section,
+.pageContent .vetementSonore section {
   margin-top: 200px;
   margin-bottom: 200px; }
-  .pageContent .corpsDanse section p {
-    font-size: 150%; }
-  .pageContent .corpsDanse section h1 {
+  .pageContent .corpsDanse section p,
+  .pageContent .vetementSonore section p {
+    font-size: 150%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    text-justify: inter-word; }
+  .pageContent .corpsDanse section h1,
+  .pageContent .vetementSonore section h1 {
     padding: 250px;
-    font-size: 400%; }
+    font-size: 400%;
+    text-align: center; }
+  .pageContent .corpsDanse section img,
+  .pageContent .vetementSonore section img {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center; }
 
 .hidden * {
   visibility: hidden !important; }
