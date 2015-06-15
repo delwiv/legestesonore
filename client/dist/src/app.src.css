@@ -82,7 +82,6 @@ body {
   text-justify: inter-word; }
 
 .pageContent .home {
-  border: 1px solid black;
   margin: 0px;
   width: 100%;
   height: 0;
@@ -92,6 +91,10 @@ body {
 .pageContent .vetementSonore section {
   margin-top: 200px;
   margin-bottom: 200px; }
+  .pageContent .corpsDanse section .fullWidth p,
+  .pageContent .vetementSonore section .fullWidth p {
+    margin-left: 8%;
+    margin-right: 8%; }
   .pageContent .corpsDanse section p,
   .pageContent .vetementSonore section p {
     font-size: 150%;
@@ -109,6 +112,15 @@ body {
   .pageContent .vetementSonore section img {
     margin-top: 15px;
     margin-bottom: 50px; }
+    .pageContent .corpsDanse section img.mec,
+    .pageContent .vetementSonore section img.mec {
+      margin-left: 150px;
+      margin-bottom: auto; }
+
+.pageContent .vetementSonore img {
+  text-align: center; }
+  .pageContent .vetementSonore img.img-large {
+    width: 100% !important; }
 
 .pageContent .vetementSonore .names {
   text-align: center; }

@@ -130,11 +130,11 @@ body {
     .home {
         // position: fixed;
         // height: 100%;
-        border: 1px solid black;
-        // iframe {
+        //border: 1px solid black;
+        //iframe {
         margin: 0px;
         @include maintain-ratio(16 9);
-        // }
+        //}
     }
     .corpsDanse,
     .vetementSonore {
@@ -143,6 +143,10 @@ body {
             // min-height: 800px;
             margin-top: 200px;
             margin-bottom: 200px;
+            .fullWidth p {
+                margin-left: 8%;
+                margin-right: 8%;
+            }
             p {
                 font-size: 150%;
                 margin-left: 15%;
@@ -159,11 +163,21 @@ body {
             img {
                 margin-top: 15px;
                 margin-bottom: 50px;
+                &.mec {
+                    margin-left: 150px;
+                    margin-bottom: auto;
+                }
             }
         }
         // .img-holder {}
     }
     .vetementSonore {
+        img {
+            text-align: center;
+            &.img-large {
+                width: 100% !important;
+            }
+        }
         .names {
             text-align: center;
         }

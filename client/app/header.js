@@ -18,7 +18,7 @@ var Header = React.createClass({
                                         <ul className="left">
                                             <li><Link to="home">
                                                 <strong>ADÈLE LE MÉNÉLEC--ROBERT</strong><br/>
-                                                Diplôme des métiers darts textiles<br/>
+                                                Diplôme des métiers d'arts textiles<br/>
                                                 2015
                                             </Link></li>
                                         </ul>

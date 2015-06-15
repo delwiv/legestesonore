@@ -149,9 +149,8 @@ var VetementSonore = React.createClass({
                         ­
                         <p>Le costume du Faune : met en exergue le caractère animal et sensuel du faune ; il ne renvoie pas à un code reconnaissable d’emblée mais donne une identité de sens. Un collant académique peint et laissant apparaître des tâches, des sandales évoquant des sabots, une petite queue et coiffe avec des oreilles pointues. Dans ce cas, les différents éléments du costume mettent en évidence une identité précise : le danseur est un animal, le Faune. Le costume ne semble pas entraver le corps dans le mouvement, il est une seconde peau, ce qui renforce cette idée d’animalité.</p>
                     </div>
-                    ­<div className="large-6 small-6 columns">
-
-
+                    ­
+                    <div className="large-6 small-6 columns">
                         <p>Le costume non­académique caractérise de manière caricaturale le personnage qu’il représente, mais en plus, joue un autre rôle, décisif, parce qu’il autorise ou interdit certains mouvements. Le danseur semble supporter une sculpture volumique de grande dimension. Son corps est quasiment enveloppé dans la structure qui semble être un assemblage d’éléments. L’ensemble évoque une sculpture qui relève du cubisme. Les jambes apparaissent dans un costume conventionnel laissant supposer que le danseur peut se déplacer. Le haut du corps semble, lui, limité dans sa gestuelle.</p>
                         <p>Le corps du danseur est transformé et s’inscrit dans une démesure. Le danseur devient le manipulateur d’un objet. Le danseur est corps et décor ; c’est un hybride (corps objet), une sculpture vivante. L’ensemble tend alors à composer une forme plastique abstraite. L’originalité de l’utilisation d’un costume «extra» ordinaire, réside dans le fait qu’il soumet le mouvement à des contraintes spécifiques (lourdeur et démesure du costume dans cet exemple) qui obligent le danseur et /ou le chorégraphe à trouver des solutions corporelles inédites. Le corps joue avec les lois de l’équilibre et du déséquilibre. La notion de contrainte offre de nouveaux possibles.</p>
                         <p>Nous sommes en présence d’une cohérence entre le costume, le corps et la création du mouvement par rapport à une volonté artistique précise.</p>
@@ -181,105 +180,116 @@ var VetementSonore = React.createClass({
                 </section>
                 <div className="vs-img-holder" data-image="/assets/img/cd-slide-9.jpg"></div>
                 <section>
-                    <div className="large-6 small-6 columns">
-                        <p>
-                            Le vêtement que je fabrique permet à l’état sonore naturel des matériaux utilisés lors de la création, d’être manipulé, amplifié, etc...
-                        </p>
-                        <p>
-                            Les bruissements qui se dégagent de nos vêtements, ne sont jamais totalement absents. Toutefois, ils sont plus facilement identifiables à certains moments clés de l’histoire du costume.
-
-                        </p>
-                        <p>
-                            Tracer cette évolution magnifie finalement son importance, tout en expliquant en même temps son statut souvent négligé par les nuances de sa fonction.
-                        </p>
-                        <div className="vert-photos">
-                            <img className="long-vert-img" src="/assets/img/vetement-sonore/IMAGE 4.jpg" />
+                    <div className="large-12 small-12 columns">
+                        <div className="large-6 small-6 columns">
+                            <p>
+                                Le vêtement que je fabrique permet à l’état sonore naturel des matériaux utilisés lors de la création, d’être manipulé, amplifié, etc...
+                            </p>
+                            <p>
+                                Les bruissements qui se dégagent de nos vêtements, ne sont jamais totalement absents. Toutefois, ils sont plus facilement identifiables à certains moments clés de l’histoire du costume.
+                            </p>
+                            <p>
+                                Tracer cette évolution magnifie finalement son importance, tout en expliquant en même temps son statut souvent négligé par les nuances de sa fonction.
+                            </p>
                         </div>
                     </div>
-                    <div className="large-6 small-6 columns">
-
+                    <div className="large-12 small-12 columns fullWidth">
                         <p>
                             Une soudaine prolifération basée sur la relation sens­objet dans la poésie, la musique et les arts visuels pendant la Renaissance montre une prise de conscience collective de l’expérience sensorielle. Le seizième siècle est appelé «l’âge de l’oreille». A cette époque, le monde était plus calme ; en l’absence d’électricité et de la technologie moderne, les paysages sonores étaient définis par le ronflement de l’eau et le bourdonnement de la conversation courante. Dans une société analphabète les repères sonores avaient une forte influence sur le quotidien. Les informations se propageaient phonétiquement. Les cloches des églises ont été le fondement, la base essentielle de la vie quotidienne. Elles étaient un repère dans le temps mais aussi un repère géographique car elles déterminaient les frontières, les signalisations quotidiennes, les événements saisonniers, mais aussi la structure de la vie spirituelle.
                         </p>
-
                     </div>
                     <div className="large-6 small-6 columns">
                         <p>
-                            En bref, les sons étaient plus perceptibles et les auditeurs plus sensibles. L’étude du bruissement des vêtements pendant la Renaissance doit prendre en compte le puissant rapport à la fidélité et la sainteté qui régnait en maître dans le quotidien de cette époque. On la désigne souvent comme étant celle où la mode est née. Elle était alors définie comme une institution mue par le cycle des tendances. Cette ère a connu une préoccupation accrue pour l’expérimentation vestimentaire. Les coutures innovantes voient le jour, ainsi que des volumes complexes et de nouvelles formes. Imaginez une robe, en couche épaisse au sein de laquelle étaient incrustées des réseaux de grilles (élaborées par les artisans ferronniers) ainsi que des pierres précieuses... N’importe quel mouvement dans un vêtement de ce type doit avoir été remarquable pour ses qualités sonores. On observe une expansion vestimentaire volumique à la périphérie du corps humain, notamment avec l’apparition des vertugadins (élément du costume féminin, sorte de crinoline espagnole). Mais également une évolution sonore à travers les chaînes et les pointes en métal qui se font de plus en plus nombreuses dans la création. Ces dernières rappellent les bruyantes armures de guerre...
-
+                            En bref, les sons étaient plus perceptibles et les auditeurs plus sensibles. L’étude du bruissement des vêtements pendant la Renaissance doit prendre en compte le puissant rapport à la fidélité et la sainteté qui régnait en maître dans le quotidien de cette époque. On la désigne souvent comme étant celle où la mode est née. Elle était alors définie comme une institution mue par le cycle des tendances. Cette ère a connu une préoccupation accrue pour l’expérimentation vestimentaire. Les coutures innovantes voient le jour, ainsi que des volumes complexes et de nouvelles formes. Imaginez une robe, en couche épaisse au sein de laquelle étaient incrustées des réseaux de grilles (élaborées par les artisans ferronniers) ainsi que des pierres précieuses... N’importe quel mouvement dans un vêtement de ce type doit avoir été remarquable pour ses qualités sonores. On observe une expansion vestimentaire volumique à la périphérie du corps humain, notamment avec l’apparition des vertugadins (élément du costume féminin, sorte de crinoline espagnole). Mais également une évolution sonore à travers les chaînes et les pointes en métal qui se font de plus en plus nombreuses dans la création. Ces dernières rappellent les bruyantes armures de guerre...</p>
+                    </div>
+                    <div className="vert-photos large-6 small-6 columns">
+                        <img className="long-vert-img" src="/assets/img/vetement-sonore/IMAGE 4.jpg" />
+                        <p>Voici un exemple de silhouette : deux cônes inversés qui évoquent un sablier un peu rigide. Le tableau date d'Henri II environ 1530</p>
+                    </div>
+                    <div className="large-12 small-12 columns fullWidth">
+                        <p>
+                            La puissance auditive de ‘la robe’ du quatorzième siècle peut encore être justifiée par le potentiel expressif d’un corps en mouvement. Ce dernier est à plusieurs reprises évoqué dans la poésie de cette époque. C’est cette écriture qui a imité les bruits rythmés du corps vêtu : les chaussures tapant sur des pavés ronds, les jupes de soie se balancent dans la foulée, les colliers de pierres précieuses frappant sourdement, doucement contre un corsage. Les images auditives dans les travaux poétiques de Petticoat Julia et Robert Herrick sont nombreuses. Ils font tous deux allusion à la capacité du son à stimuler l’émotion et à nous situer dans une expérience corporelle de mémoire.
                         </p>
                         <p>
-
+                            La fonction sonore du vêtement apparait comme un moyen de s’imposer en société comme quelqu’un d’important (l’ampleur des vêtements de l’époque sert également ce propos) mais pas que, en effet, le vêtement sonore est également un moyen de séduire. En bref, il est un moyen d’être vu, entendu, regardé.
                         </p>
                         <p>
-
+                            L’efficacité du son dans l’expression de l’érotisme à travers la robe devient encore plus évident lors de l’apogée de la mode dite ‘bruyante’ : au dix­neuvième siècle. Après la Renaissance, le potentiel sonore des vêtements continue d’être exploité, mais dans la seconde moitié du XIXe siècle on observe une augmentation notable des allusions aux sons des vêtements.
                         </p>
                         <p>
-
+                            Exemple dans la littérature contemporaine, les mots rattachés au champ lexical du bruit abondent : «frou­frou, bourdonnement, tintement, bruissement, chuintement, grincement, sifflement» et ce pour qualifier des thermes tel que «jupes voluptueuses en soie, taffetas moiré, glacine, crêpe, satin et dentelle». Les descriptions varient considérablement du tempéré : «doux, léger, faible, sensible» ; au rythmique : «agréable, musical, flottement, gracieux, balayant» ; à l’euphorie : «indescriptible, glorieux, captivant, violent, déconcertant».
                         </p>
+                        <p>Pourquoi les vêtements furent soudainement si acoustiquement désignés?</p>
+                        <p>Trois facteurs sociologiques spécifiques peuvent répondre à cette question.</p>
+                        ­
+                        <p> - l’assaut de la révolution industrielle</p>
+                        ­
+                        <p> - les innovations technologiques</p>
+                        ­
+                        <p> - l’établissement stricte des valeurs bourgeoises</p>
+                        ­
                         <p>
-
-                        </p>
-                        <p>
-
-                        </p>
-
-                        <p>
+                            Ces trois facteurs ont convergé pour créer le cadre idéal afin que l’état sonore naturel des matières puisse devenir le chapitre le plus actif de l’histoire du costume. Le boom de la révolution industrielle a établi un nouveau rythme de vie. Ce dernier a affecté la sensibilité sensuelle et naturelle des organismes. Les inventions les plus percutantes du XIXe siècle étaient parfaitement audibles dans leurs interactions avec le monde : trains, voitures, machines à écrire, aspirateurs et machines à laver. Non seulement l’état sonore du monde a été plus intense, plus fort, mais le sens même du ‘son’ lui­même a complètement changé.
                         </p>
                     </div>
                     <div className="large-6 small-6 columns">
+                        <img src="/assets/img/vetement-sonore/IMAGE 5.jpg" />
                         <p>
-                            Anne Teresa De Keersmaeker est danseuse et chorégraphe belge flamande. Elle est une figure majeure de la danse contemporaine belge et mondiale. Elle s’est imposée au début des années 1980 grâce à sa volonté de renouveler le lien intense entre danse et musique. Elle déclare : « Il y a dans cette musique, un rapport de connivence aussi étroit entre le son et le silence qu’il y en a, pour moi, entre le mouvement et l’immobilité. J’y vois aussi une très grande économie de moyens, un désir d’austérité, de lenteur ». Ce désir d’austérité et une sécheresse apparente qui cherchent cependant « à faire jaillir la vie ». En 2008, elle réalise un « virage » dans son processus de création en écrivant une pièce, The Song, bâtie autour du silence et de quelques bruitages dont la structure repose autour de l’espace scénique, des lumières et du seul mouvement des corps.
-                        </p>
-                        <p>
-                            En m’intéressant aux propriétés sonores des matières, le textile devient instrument et le danseur musicien. Ainsi le rythme sonore émane du rythme chorégraphié.
-                        </p>
-                        <p>
-                            Le corps est devenu créateur de bruissement dans le mouvement. Danser le silence ? Une histoire où le silence a tout simplement la parole...
-                        </p>
-                    </div>
-                    <div style={style}></div>
-                </section>
-                <div className="vs-img-holder" data-image="/assets/img/cd-slide-10.jpg"></div>
-                <section>
-                    <h1>Espace</h1>
-                </section>
-                <div className="vs-img-holder" data-image="/assets/img/cd-slide-5.jpg"></div>
-                <section>
-                    <div className="large-6 small-6 columns">
-                        <p>
-                            Le mouvement est réalisé dans l’espace qui se trouve à la périphérie du danseur.
-                        </p>
-                        <p>
-                            Il est important de différencier l’espace scénique, c’est­à­ dire les lieux investis habituellement par la danse ; théâtres / opéras / scènes / salles / halls / réserves / hangars / garages / parkings / lofts / murs / toits / musées / rues, etc. De l’espace propre au danseur : intérieur, périphérique (ou corporel proche), extérieur (ou de déplacement), inter- danseurs.
-                        </p>
-                        <p>
-                            Depuis le 20ème siècle l’espace du danseur s’est progressivement métamorphosé. La libération hors des lieux traditionnels a donc été entretenue par la quête de liberté face aux contraintes et normes de la danse classique et moderne.
-                        </p>
-                        <p>
-                            Cette soif d’affranchissement a eu des répercussions sur la place du spectateur, toujours plus questionnée et redéfinie par cette évolution, voire, parfois, niée (puisqu’en refusant l’idée de «spectacle», on ne lui permet pas d’être considéré). Le danseur, en «s’exposant» hors­cadre, prend aussi le risque dans certaines œuvres de ne pas même être vu...
+                            Georges Jules VICTOR peint Frou Frou, 1882.
                         </p>
                     </div>
                     <div className="large-6 small-6 columns">
                         <p>
-                            Les pionniers de la performance de danse verticale sont les danseurs de la compagnie Bandaloop. Leurs chorégraphies sont complexes et ils ont l’art de transformer la piste de danse.
+                            Au XIXe siècle le bruissement d’une jupe est devenu un outil extrêmement utile pour communiquer. La fonction du vêtement sonore apparait par conséquent, comme une preuve de la physicalité et de la personnalité, une manifestation, l’affirmation d’un coup de tête. Cette fonction est paradoxalement subtile dans sa sémiotique, pré­ langage universel, mais également spécifique dans sa délibération. C’est tout ce que la mode s’efforce d’être. Elle se manifeste parfois si subtilement que cela devient presque imperceptible.
                         </p>
                         <p>
-                            Fondé par la chorégraphe et la directrice artistique Amelia Rudolph, le travail de Bandaloop a été présenté dans des théâtres et des musées, sur des gratte­ciels, des ponts, des panneaux d’affichage et des sites historiques, dans des auditoriums et des halls de convention, dans la nature sur des falaises et sur des écrans.
-                            <br/> BANDALOOP apporte à la danse de nouveaux publics, de nouveaux espaces, de nouveaux lieux. Ils ré­imaginent ce que la danse peut être.
+                            Peut ­être que ce n’est pas un hasard si une telle expression nuancée de l’individualité se développe pendant cette période.
                         </p>
                         <p>
-                            L’image ci­dessous est une performance de danse qui a été filmée à la verticale sur le côté du bâtiment de 18 étages de l’hôtel de ville d’Oakland au début du mois à l’Art + Soul Festival. Les danseurs sont Amelia Rudolph et Roel Seeber.
+                            Quelle femme ne s’est pas sentie strictement circonscrite au XIXe siècle ? Telle que définie par des valeurs bourgeoises, chaque expression de la féminité a été codifiée, décidément distincte et opposée à la masculinité. Nulle part cette vérité ne s’est sentie plus profondément que dans la mode. Le ‘son’ lui­même est devenu genré, érotisé, fétichisé et marginalisé.
+                            <p>Un exemple de cette affirmation est «Frou Frou». </p>
+                        </p>
+                        <p>
+                            C’est le personnage principale de la pièce populaire de Georges Clairin écrite en 1869. Elle est une héroïne frivole nommée pour le comportement bruyant et enivrante de sa robe, qui sert en fin de compte comme une métaphore de son caractère superficiel et immoral.
                         </p>
                     </div>
-                    <div className="large-12 small-12 columns">
-                        <img className="section-img center columns" src="/assets/img/IMAGE 5.jpg" />
+                    <div className="large-12 small-12 columns  fullWidth">
+                        <p>
+                            Tout au long du XXe siècle, une tendance pour le ‘son dans les vêtements’ a surgi. Les robes ornées de perles des jeunes filles délurées des années 1920 ont accompagné les formidables musiques de Jazz. Un défilé de mode voit le jour en 1964 à Los Angeles, grâce à l’initiative du designer Eddy George. Il a eu lieu dans la plus grande chambre anéchoïque du monde, où le «doux chuchotement peut être entendu ... le décor parfait pour les robes qui vont vous catapulter sur la lune». ­ Julie Byrne, Here’s the Sound of Fashion: An Explosion or a Whisper (Los Angeles Times, October 20, 1964.)
+                        </p>
+                        <p>
+                            C’est dans la dernière décennie que les designers textile ont pris conscience de l’importance de s’interroger et de travailler une approche sensorielle du vêtement.
+                        </p>
+                    </div>
+                    <div className="large-6 small-6 columns">
+                        <p>
+                            Le duo néerlandais Viktor & Rolf ont présenté pour l’Automne/Hiver 2000 une collection de haute couture, probablement la plus remarquable pour son ampleur sonore. Leurs créations, étaient recouvertes d’une épaisse couche de cloches en laiton. Ils ont fait de choix de faire avancer leurs mannequins dans un épais brouillard. Le tintement et les cliquetis de chaque ensemble, si subtiles, si apaisants, furent entendus longtemps avant d’être vus. La collection met en scène l’interaction entre les cloches et les vêtements. Le sens qui se dégage de cette action est que le vêtement est signifiant et un diffuseur d’une information puissante. Le défilé met en valeur la notion que le son entretient un lien étroit avec la mode. Ce projet a réaffirmé que l’expérience sensorielle du vêtement sur un corps en mouvement est un élément à ne pas négliger dans la création.
+                        </p>
+                        <p>
+                            Autre exemple : la performance de Bjork en robe AlexanderMcQueen en 2001. Sa robe se transforme en un instrumentde pulsation et qui fait référence à l’état sonore naturel deson corps, à la vitalité de l’organisme. Cette dernière luipermet de créer un fond sonore lorsqu’elle chante, en quelque sorte, sa robe l’accompagne.
+                        </p>
+                        <p>
+                            De même, le «froissé argenté» fait de sacs poubelle recyclés est une collection de robes de Gareth Pugh, 2013. Elle rappelle l’importance de prendre en compte le sens de l’ouïe lors de la création de la même façon que l’on s’intéresse au toucher, ou à la vue.
+                        </p>
+                        <img src="/assets/img/vetement-sonore/IMAGE 6 (2).jpg" />
+                    </div>
+                    <div className="large-6 small-6 columns">
+                        <img src="/assets/img/vetement-sonore/IMAGE 6 (3).jpg" />
+                    </div>
+                    <div className="large-6 small-6 columns">
+                        <img src="/assets/img/vetement-sonore/IMAGE 6 (1).jpg" />
+                    </div>
+                    <div className="large-6 small-6 columns">
+                        <p>
+                            Les différentes instances du potentiel sonore des matières qui composent les vêtements de notre quotidien, vêtements de scène, depuis la Renaissance jusqu’à nos jours ont éveillé la créativité de certains, développé leur l’imagination. Mais elles représentent encore aujourd’hui un potentiel quasi­inexploité.
+                        </p>
+                        <p>
+                            Finalement, l’acte de faire entendre ce bruit est implicite dans l’expérience et l’interprétation des vêtements. En comprenant la dextérité animée du bruit par son passé, nous pouvons commencer à imaginer, et entendre, son avenir.
+                        </p>
                     </div>
                     <div style={style}></div>
                 </section>
             </div>
-
-
 
         );
     }

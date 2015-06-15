@@ -88,6 +88,9 @@ var CorpsDanse = React.createClass({
                         </p>
                         <p>Le geste musical est un des phénomènes les plus complexes de l’expression humaine ; il relève de réactions synchrones diverses et variées. Chez l’homme, différents gestes contribuent ainsi à l’éclosion de toutes sortes de sons vivants qui nous entourent ou agissent en nous, bien que chacun d’eux ne revête pas la même importance.</p>
                         <p>C’est le travail de la perception et de l’organisation du matériau sonore (capté ou imaginé par chacun) qui permet d’explorer leurs différentes possibilités et de leur donner un sens musical.</p>
+
+                        <img className="section-img mec" src="/assets/img/peinture.jpg"/>
+
                     </div>
 
                     <div className="large-6 small-6 columns">
@@ -102,8 +105,8 @@ var CorpsDanse = React.createClass({
                         <br/>
                         <br/>
                         <p>
-                            Quand le "devenir­oiseau" ...
-                            <br/> se confond avec un "devenir­pinceau".
+                            Quand le "devenir­ oiseau" ...
+                            <br/> se confond avec un "devenir­ pinceau".
                         </p>
                         <p>
                             Le chorégraphe Josef Nadj et le musicien Akosh S. sont à l’origine de cette performance dansée où il est question d’une observation patiente, minutieuse des corbeaux et en particulier, de l’instant fugace où ils se posent, où s’opère la transition entre le vol et la marche.

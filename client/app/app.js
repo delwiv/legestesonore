@@ -115,12 +115,15 @@ var PageContent = React.createClass({
 var Contact = React.createClass({
     render: function() {
         return (
-            <div className="contact"></div>
+            <div className="contact">
+            <h1>En Construction...</h1>
+
+            </div>
         );
     }
 });
 
-// <iframe className="large-12 small-12 columns" height="394px" src="//player.vimeo.com/video/44371067?badge=0&autoplay=1&title=0&portrait=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+// <iframe   src="//player.vimeo.com/video/44371067?badge=0&autoplay=1&title=0&portrait=0&byline=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 //                 </iframe>
 
 
@@ -130,7 +133,7 @@ var Home = React.createClass({
         return (
             <div className="home">
 
-
+            <iframe className="large-12 small-12 columns" height="600px" src="https://www.youtube.com/embed/R6JMSHM8TI4" frameborder="0" allowfullscreen></iframe>
             </div>
         );
     }
